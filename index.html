@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda telefonica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./images/logo.png" alt="gancho telefone" >
+            <h1>Agenda telefônica</h1>
+        </header>
+        <p class="instrucoes"><b>Instruções:</b> entre com seu nome e número(celular ou fixo).Para seu telefone digite somente os numeros.</p>
+        <form id="form-agenda">
+            <input type="text" required placeholder="Nome" id="nome-cadastro"/>
+            <input type="tel" required placeholder="Telefone" id="telefone-cadastro" maxlength="11" minlength="10"/>
+            <button type="submit">Cadastrar</button>
+        </form>
+
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <td>Nome</td>
+                    <td>Telefone</td>
+                    <td>Tipo</td>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td id="resumo">A agenda possui 0 telefones cadastrados</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
